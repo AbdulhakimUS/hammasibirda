@@ -5,7 +5,8 @@
     transition: .3s;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-:root{
+
+:root {
     --primary-color: #112d32;
     --secondary-color: #88bdbc;
     --text-color: #254e58;
@@ -13,16 +14,21 @@
     --button-text-color: #6e6658;
     --opacity-color: #254e58f0;
 }
-input{
+
+input {
     padding: 7px 15px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
 }
 
 /* navbar */
 nav {
+<<<<<<< Updated upstream
     background-color: var(--opacity-color);
+=======
+>>>>>>> Stashed changes
     padding: 20px 20px;
     height: 10%;
     width: 100%;
@@ -31,6 +37,22 @@ nav {
     border-bottom-right-radius: 20px;
 }
 
+.navbar {
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--text-color);
+}
+
+.navbar.scrolled .navbar-brand-span {
+    color: var(--secondary-color);
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: var(--secondary-color);
+}
 
 .nav-link {
     font-weight: bolder;
@@ -65,7 +87,7 @@ nav {
     font-weight: bold;
 }
 
-.Dropdown-menu.open{
+.Dropdown-menu.open {
     width: 100%;
     height: 280px;
 }
@@ -96,12 +118,12 @@ nav {
 
 /* Home */
 
-#home{
+#home {
     width: 100%;
     height: 700px;
 }
 
-.container-home{
+.container-home {
     width: 100%;
     height: 100vh;
     background-color: var(--secondary-color);
@@ -112,30 +134,30 @@ nav {
     padding: 100px;
 }
 
-.left-home{
+.left-home {
     padding: 30px;
 }
 
-.left-home-h1{
+.left-home-h1 {
     font-weight: bold;
     color: white;
     font-size: 55px;
 }
 
-.left-home-h1-span{
+.left-home-h1-span {
     color: var(--text-color);
 }
 
-.left-home-p{
+.left-home-p {
     color: white;
     font-size: 19px;
 }
 
-.right-home{
+.right-home {
     padding: 30px;
 }
 
-.right-home-img{
+.right-home-img {
     width: 500px;
     height: 500px;
     border-radius: 10px 75px 10px 75px;
@@ -143,13 +165,13 @@ nav {
     box-shadow: 5px 7px 25px grey;
 }
 
-.right-home-img:hover{
+.right-home-img:hover {
     transform: scale(1.02)
 }
 
 /* About */
 
-.container-about{
+.container-about {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -157,7 +179,8 @@ nav {
     flex-direction: column;
     padding: 100px;
 }
-.about-p{
+
+.about-p {
     padding: 30px;
     font-size: 18px;
     text-align: center;
@@ -182,30 +205,37 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .footer-section {
     flex: 1;
     padding: 10px;
 }
+
 .footer-section h4 {
     color: var(--secondary-color);
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .footer-section a {
     color: #ffffff;
     text-decoration: none;
     display: block;
     margin: 5px 0;
 }
+
 .footer-section a:hover {
     text-decoration: underline;
 }
+
 .contact-info {
     margin-top: 10px;
 }
+
 .subscribe {
     margin-top: 10px;
 }
+
 #followButton {
     background-color: var(--button-text-color);
     color: white;
