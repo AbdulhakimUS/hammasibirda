@@ -89,6 +89,10 @@ input {
 
 /* navbar */
 nav {
+<<<<<<< Updated upstream
+=======
+    background-color: var(--opacity-color);
+>>>>>>> Stashed changes
     padding: 20px 20px;
     height: 10%;
     width: 100%;
