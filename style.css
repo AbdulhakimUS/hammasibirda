@@ -8,18 +8,16 @@
 }
 
 :root {
-    --primary-color: #112d32;
-    --secondary-color: #88bdbc;
-    --text-color: #254e58;
-    --button-color: #4f4a41;
-    --button-text-color: #6e6658;
-    --opacity-color: #254e58f0;
+    --primary-color: #141416;
+    --secondary-color: #19352D;
+    --text-color: #C4F500;
+    --opacity-color: #196164;
 }
 
 #preloader {
     position: fixed;
     inset: 0;
-    background: white;
+    background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,8 +83,110 @@ input {
     outline: none;
 }
 
+/* Home */
+#Home{
+    width: 100%;
+    height: 700px;
+}
 
+.container-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./img/bg\ img.png);
+    width: 100%;
+    height: 680px;
+    background-size: cover;
+    padding: 50px;
+    padding-top: 100px;
+}
 
+.home-img{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 20px;
+}
+
+.home-h1{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+
+.home-p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.home-h1-span{
+    color: var(--text-color);
+}
+/* Home */
+
+/* Strategic */
+.container-strategic{
+    width: 100%;
+    height: 700px;
+    margin-top: -20px;
+    padding: 20px 70px;
+    background-color: #000;
+}
+
+.strategic-h1{
+    font-size: 55px;
+    font-weight: bold;
+    margin: 60px auto;
+    text-align: center;
+    color: white;
+}
+
+.card-group{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-strategic{
+    width: 360px;
+    height: 340px;
+    border: 1px solid var(--secondary-color);
+    color: white;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 15px 25px 15px 25px;
+}
+
+.strategic-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+
+.strategic-h3{
+    font-size: 24px;
+}
+
+.strategic-p{
+    font-size: 15px;
+}
+
+.strategic-learn{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Strategic */
 
 
 /* footer css */
