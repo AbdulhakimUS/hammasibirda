@@ -11,6 +11,7 @@
     --text-color: #254e58;
     --button-color: #4f4a41;
     --button-text-color: #6e6658;
+    --opacity-color: #254e58f0;
 }
 input{
     padding: 7px 15px;
@@ -21,7 +22,7 @@ input{
 
 /* navbar */
 nav {
-    background-color: var(--secondary-color);
+    background-color: var(--opacity-color);
     padding: 20px 20px;
     height: 10%;
     width: 100%;
@@ -83,7 +84,7 @@ nav {
 }
 
 .navbar-brand-span {
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .container-fluid {
@@ -188,6 +189,7 @@ footer {
 .footer-section h4 {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .footer-section a {
     color: #ffffff;
