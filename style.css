@@ -128,3 +128,19 @@ nav {
     border: 5px solid #254e58;
     box-shadow: 5px 7px 25px grey;
 }
+
+/* About */
+
+.container-about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.about-p{
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
