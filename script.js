@@ -14,12 +14,18 @@ toggleBtn.addEventListener('click', () => {
     isOpen = !isOpen;
 });
 
+<<<<<<< Updated upstream
 
 // aos 
 AOS.init();
 
 
 // navbar change color 
+=======
+AOS.init();
+
+
+>>>>>>> Stashed changes
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function () {
@@ -29,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navbar.classList.remove('scrolled');
         }
     });
+<<<<<<< Updated upstream
 });
 
 
@@ -44,3 +51,6 @@ const preloader = document.getElementById('preloader');
       setTimeout(() => preloader.remove(), 500); // удалить после анимации
     }, delay);
   });
+=======
+});
+>>>>>>> Stashed changes
