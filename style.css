@@ -5,10 +5,23 @@
     transition: .3s;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+:root{
+    --primary-color: #112d32;
+    --secondary-color: #88bdbc;
+    --text-color: #254e58;
+    --button-color: #4f4a41;
+    --button-text-color: #6e6658;
+}
+input{
+    padding: 7px 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 /* navbar */
 nav {
-    background-color: #88bdbc;
+    background-color: var(--secondary-color);
     padding: 20px 20px;
     height: 10%;
     width: 100%;
@@ -25,7 +38,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #254e58;
+    color: var(--text-color);
 }
 
 
@@ -143,4 +156,55 @@ nav {
     padding: 30px;
     font-size: 18px;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer css */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+.footer-section h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.contact-info {
+    margin-top: 10px;
+}
+.subscribe {
+    margin-top: 10px;
+}
+#followButton {
+    background-color: var(--button-text-color);
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
