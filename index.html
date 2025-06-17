@@ -28,6 +28,8 @@
     <!-- animation library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- CUSTOM CSS  -->
     <link rel="stylesheet" href="style.css">
 
@@ -39,6 +41,51 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
+
+    <!-- header  -->
+    <header>
+        <div class="lokatsiya">
+            <i class="fa-solid fa-location-dot"></i>
+            wertyuioiuytrewerty
+        </div>
+        <div class="d-flex gap-4">
+            <div class="tel">
+                <i class="fa-solid fa-phone"></i>
+                +998 00 000 00 00
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                HammasiBirga@gmail.com
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="logo"><img src="./img/Hammasi Birda.png" alt="HB"></div>
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="language-dropdown">
+            <span class="text-white d-flex gap-1"><img src="https://media.flaticon.com/dist/min/img/flags/en.svg" width="16"
+                    height="11" loading="lazy">English</span>
+            <div class="language-dropdown-content">
+                <a href="#" class="d-flex"><img src="https://cdn-icons-png.flaticon.com/512/14009/14009834.png"
+                        width="16" height="11" loading="lazy">O'zbekcha </a>
+                <a href="#" class="d-flex"><img src="https://media.flaticon.com/dist/min/img/flags/en.svg" width="16"
+                        height="11" loading="lazy">English </a>
+                <a href="#" class="d-flex"><img src="https://media.flaticon.com/dist/min/img/flags/ru.svg" width="16"
+                        height="11" loading="lazy"> Русский</a>
+            </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
 
     <!-- Home  -->
     <section id="Home">
@@ -147,7 +194,27 @@
     </section>
     <!-- Goals -->
 
-    <!--  -->
+    <!-- About us (asoschilar) -->
+    <section id="About-us">
+        <div class="container-about-us">
+            <div class="left-about" data-aos="fade-left" data-aos-duration="3000">
+                <img src="./img/asoschi.png" alt="Asoschi-1" width="300">
+            </div>
+            <div class="between-about">
+                <h6 data-aos="fade-top" data-aos-duration="1000">About us</h6>
+                <h1 data-aos="fade-top" data-aos-duration="2000">Maximizing Through <br> the Strategic</h1>
+                <p data-aos="fade-up" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing and
+                    typese industry.
+                    Lorem Ipsum has been the industry's standard dumm text ever since the
+                    1500s, when an unknown printer took a galley of type
+                </p>
+
+            </div>
+            <div class="right-about" data-aos="fade-right" data-aos-duration="3000">
+                <img src="./img/asoschi.png" alt="Asoschi-2" width="300">
+            </div>
+        </div>
+    </section>
 
 
     <!-- footer -->
