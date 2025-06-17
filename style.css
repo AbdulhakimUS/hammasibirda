@@ -948,6 +948,10 @@ input {
     margin-bottom: 20px;
 }
 
+.card-portfolio:hover{
+    transform: scale(1.02);
+}
+
 .card-content {
     padding: 10px;
     text-align: left;
