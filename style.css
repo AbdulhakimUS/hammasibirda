@@ -653,7 +653,6 @@ input {
 .top-line {
     bottom: 60%;
     height: 25%;
-    animation: growUp 2s ease-in-out ;
     margin-bottom: -5px;
 }
 
@@ -661,33 +660,7 @@ input {
 .bottom-line {
     top: 60%;
     height: 25%;
-    animation: growDown 2s ease-in-out;
     margin-top: -5px;
-}
-
-/* Анимации */
-@keyframes growUp {
-    0% {
-        height: 0%;
-        bottom: 60%;
-    }
-
-    100% {
-        height: 25%;
-        bottom: 60%;
-    }
-}
-
-@keyframes growDown {
-    0% {
-        height: 0%;
-        top: 60%;
-    }
-
-    100% {
-        height: 25%;
-        top: 60%;
-    }
 }
 
 /* Goals */
