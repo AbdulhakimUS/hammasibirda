@@ -1,6 +1,6 @@
 function toggleMenu() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
 }
 
 // aos 
@@ -24,32 +24,6 @@ const preloader = document.getElementById('preloader');
 const start = Date.now();
 
 window.addEventListener('load', function () {
-<<<<<<< Updated upstream
-  const elapsed = Date.now() - start;
-  const delay = Math.max(2220 - elapsed, 0); // минимум 2 сек
-  setTimeout(() => {
-    preloader.classList.add('hidden');
-    setTimeout(() => preloader.remove(), 500); // удалить после анимации
-  }, delay);
-});
-
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-  const h1 = document.querySelector(".home-h1");
-  const p = document.querySelector(".home-p");
-  const img = document.querySelector(".home-img");
-
-  // Preloader tugagach (masalan, 2.2 soniya ichida)
-  setTimeout(() => {
-    preloader.style.display = "none";
-
-    // HOME bo‘limga animatsiya qo‘shamiz
-    h1.classList.add("animate");
-    p.classList.add("animate");
-    img.classList.add("animate");
-  }, 2200); // Preloader animatsiyasi tugash vaqti
-});
-=======
     const elapsed = Date.now() - start;
     const delay = Math.max(2220 - elapsed, 0); // минимум 2 сек
     setTimeout(() => {
@@ -57,6 +31,30 @@ window.addEventListener("load", () => {
         setTimeout(() => preloader.remove(), 500); // удалить после анимации
     }, delay);
 });
+
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    const h1 = document.querySelector(".home-h1");
+    const p = document.querySelector(".home-p");
+    const img = document.querySelector(".home-img");
+
+    // Preloader tugagach (masalan, 2.2 soniya ichida)
+    setTimeout(() => {
+        preloader.style.display = "none";
+
+        // HOME bo‘limga animatsiya qo‘shamiz
+        h1.classList.add("animate");
+        p.classList.add("animate");
+        img.classList.add("animate");
+    }, 2200); // Preloader animatsiyasi tugash vaqti
+});
+
+const elapsed = Date.now() - start;
+const delay = Math.max(2220 - elapsed, 0); // минимум 2 сек
+setTimeout(() => {
+    preloader.classList.add('hidden');
+    setTimeout(() => preloader.remove(), 500); // удалить после анимации
+}, delay);
 
 //   raview
 const counters = document.querySelectorAll('.count');
@@ -108,20 +106,25 @@ window.addEventListener('scroll', () => {
 });
 
 // line between sections 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const targets = document.querySelectorAll('.observe-target');
 
     const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          obs.unobserve(entry.target); // отключить после одного срабатывания
-        }
-      });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                obs.unobserve(entry.target); // отключить после одного срабатывания
+            }
+        });
     }, {
-      threshold: 0.5, // элемент должен быть виден на 50%
+        threshold: 0.5, // элемент должен быть виден на 50%
     });
 
     targets.forEach(target => observer.observe(target));
-  });
->>>>>>> Stashed changes
+});
+
+//   togglemenu 
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
