@@ -724,6 +724,32 @@ input {
 
 /* portfolio */
 
+/* marquee */
+.marquee {
+  background-color: var(--text-color);
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marqueeAnim 50s linear infinite;
+}
+
+.marquee-content img {
+  margin-right: 20px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+@keyframes marqueeAnim {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* marquee */
+
 /* footer css */
 footer {
   background-color: var(--primary-color);
