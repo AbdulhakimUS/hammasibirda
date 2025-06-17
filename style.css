@@ -1216,10 +1216,10 @@ input {
     top: 5px;
     right: 10px;
     display: flex;
-    width: 200px;
+    width: 150px;
     background-color: white;
     border-radius: 20px;
-    padding: 20px 40px;
+    padding: 20px 35px;
 }
 
 /* ask question */
@@ -1786,6 +1786,29 @@ footer {
     .card-body h4{
         font-size: 14px;
         margin: 15px 0;
+    }
+
+    /* ask question  */
+    .ask-question{
+        padding: 50px 100px;
+    }
+    .question-right{
+        max-width: 450px;
+        width: 100%;
+    }
+    .question-left{
+        max-width: 350px;
+        width: 100%;
+    }
+    .question-left h1{
+        font-size: 24px;
+    }
+    .question-img-text{
+        width: 100px;
+        padding: 7px 25px;
+    }
+    .question-img-text h1{
+        font-size: 18px;
     }
 
     /* Footer */
