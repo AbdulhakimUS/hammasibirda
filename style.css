@@ -12,6 +12,9 @@
     --secondary-color: #19352D;
     --text-color: #C4F500;
     --opacity-color: #196164;
+    --dark-black: #000;
+    --white : White;
+    --opacity-white: #dad3d3;
 }
 
 #preloader {
@@ -131,16 +134,16 @@ input {
 /* Strategic */
 .container-strategic{
     width: 100%;
-    height: 700px;
+    height: 850px;
     margin-top: -20px;
     padding: 20px 70px;
-    background-color: #000;
+    background-color: var(--dark-black);
 }
 
 .strategic-h1{
     font-size: 55px;
     font-weight: bold;
-    margin: 60px auto;
+    margin: 150px auto;
     text-align: center;
     color: white;
 }
@@ -150,6 +153,7 @@ input {
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: -70px;
 }
 
 .card-strategic{
@@ -178,15 +182,202 @@ input {
 
 .strategic-p{
     font-size: 15px;
+    color: var(--opacity-white);
 }
 
 .strategic-learn{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     letter-spacing: 1px;
 }
 
 /* Strategic */
+
+/* Goals */
+#Goals{
+    width: 100%;
+    height: 900px;
+    padding: 0;
+    background-color: var(--dark-black);
+}
+
+.container-goals{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 200px;
+    margin-bottom: 30px;
+}
+
+.goals-chek-left{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.goals-chek{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.goals-chek p{
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+}
+
+.goals-chek-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.goal-h1{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.top-left-h2{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 50px;
+    color: var(--white);
+}
+
+.top-left-p{
+    font-size: 12px;
+    color: var(--opacity-white);
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom-right-h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.bottom-right-p{
+    font-size: 12px;
+    color: var(--opacity-white);
+}
+
+.goal-img{
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+}
+
+.goals-chek h4{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.goals-chek p{
+    font-weight: normal;
+    color: var(--opacity-white);
+}
+
+.timeline-container {
+  position: relative;
+  width: 6px;
+  height: 100vh;
+  margin: auto;
+}
+
+/* Общий стиль линий */
+.timeline-line {
+  position: absolute;
+  width: 6px;
+  background-color: #00ffcc;
+  border-radius: 3px;
+}
+
+/* Центральная соединительная линия между точками */
+.middle-line {
+  top: 40%;
+  height: 20%;
+}
+
+/* Анимированные точки */
+.timeline-dot {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #00ffcc;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.top-dot {
+  top: 40%;
+}
+
+.bottom-dot {
+  top: 60%;
+}
+
+/* Анимация верхней линии — растёт от верхней точки вверх */
+.top-line {
+  bottom: 60%;
+  height: 55%;
+  animation: growUp 4s ease-in-out infinite;
+  margin-bottom: -5px;
+}
+
+/* Анимация нижней линии — растёт от нижней точки вниз */
+.bottom-line {
+  top: 60%;
+  height: 55%;
+  animation: growDown 4s ease-in-out infinite;
+  margin-top: -5px;
+}
+
+/* Анимации */
+@keyframes growUp {
+  0% {
+    height: 0%;
+    bottom: 60%;
+  }
+  50% {
+    height: 25%;
+    bottom: 60%;
+  }
+  100% {
+    height: 0%;
+    bottom: 60%;
+  }
+}
+
+@keyframes growDown {
+  0% {
+    height: 0%;
+    top: 60%;
+  }
+  50% {
+    height: 25%;
+    top: 60%;
+  }
+  100% {
+    height: 0%;
+    top: 60%;
+  }
+}
+/* Goals */
 
 
 /* footer css */
