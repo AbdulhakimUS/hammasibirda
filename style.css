@@ -1722,6 +1722,7 @@ footer {
   }
 
   .card-group {
+    display: block;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
@@ -1867,6 +1868,7 @@ footer {
 
   /* News Cards */
   .news-cards {
+    display: block;
     flex-direction: row;
     gap: 20px;
   }
@@ -1997,6 +1999,7 @@ footer {
 
   /* About Us */
   .container-about-us {
+    display: block;
     padding: 20px 20px;
   }
 
@@ -2093,6 +2096,10 @@ footer {
     gap: 20px;
   }
 
+  /* contact us */
+  .contact-us{
+    display: block;
+  }
   /* Stats */
   .container-stats {
     padding: 1rem 3rem;
@@ -2121,6 +2128,9 @@ footer {
   .portfolio-title {
     font-size: 28px;
     margin: 20px;
+  }
+  .portfolio-left, .portfolio-right{
+    display: block;
   }
 
   .portfolio-title-view {
@@ -2151,6 +2161,11 @@ footer {
     font-size: 16px;
   }
 
+  /* ask question */
+  .ask-question{
+    display: block;
+  }
+
   /* Footer */
   .footer-section h4 {
     font-size: 16px;
@@ -2168,6 +2183,9 @@ footer {
   .card-portfolio {
     width: 100%;
     max-width: 325px;
+  }
+  .timeline-container {
+    display: none;
   }
 }
 
