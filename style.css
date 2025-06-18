@@ -2141,7 +2141,6 @@ footer {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 .container-about-us img {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2154,7 +2153,6 @@ footer {
 .between-about h6 {
   font-size: 1.8rem;
 }
-=======
   /* About Us */
   .container-about-us {
     display: flex;
@@ -2175,7 +2173,6 @@ footer {
   .between-about h6 {
     font-size: 1.8rem;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 
 #LoremButton {
   padding: 7px 30px;
@@ -2208,7 +2205,6 @@ footer {
   font-size: 14px;
 }
 
-<<<<<<< HEAD
 /* Goals */
 .container-goals {
   margin: 0 20px;
@@ -2233,7 +2229,6 @@ footer {
 .goals-chek {
   margin-top: 25px;
 }
-=======
   /* Goals */
   .container-goals {
     margin: 0 20px;
@@ -2325,7 +2320,6 @@ footer {
   .stat-box {
     margin-bottom: 20px;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 
 /* Stats */
 .container-stats {
@@ -2340,12 +2334,10 @@ footer {
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
 .count,
 .plus {
   font-size: 1.5rem;
 }
-=======
   /* Portfolio */
   .portfolio-title {
     font-size: 28px;
@@ -2356,23 +2348,19 @@ footer {
   .portfolio-right {
     display: flex;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 
 .stat-box p {
   font-size: 0.8rem;
 }
 
-<<<<<<< HEAD
 /* Portfolio */
 .portfolio-title {
   font-size: 28px;
   margin: 20px;
 }
-=======
   .view-more-portfolio {
     margin-top: -50px;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 
 .portfolio-left,
 .portfolio-right {
@@ -2389,7 +2377,6 @@ footer {
   margin-top: -50px;
 }
 
-<<<<<<< HEAD
 .container-portfolio {
   margin: 0 20px;
 }
@@ -2403,7 +2390,6 @@ footer {
 .card-body {
   padding: 20px;
 }
-=======
   .card-body h4 {
     font-size: 14px;
   }
@@ -2420,13 +2406,11 @@ footer {
   .footer-section h4 {
     font-size: 16px;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 
 .card-body h4 {
   font-size: 14px;
 }
 
-<<<<<<< HEAD
 /* ask question */
 .ask-question {
   display: block;
@@ -2458,7 +2442,6 @@ footer {
 .timeline-container {
   display: none;
 }
-=======
   #followButton {
     padding: 7px 15px;
   }
@@ -2471,9 +2454,7 @@ footer {
   .timeline-container {
     display: none;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 }
-
 /* Small Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
 
@@ -2549,7 +2530,6 @@ footer {
   .portfolio-title {
     font-size: 24px;
   }
-<<<<<<< HEAD
 /* News Cards */
 .news-card-h1 {
   font-size: 28px;
@@ -2558,7 +2538,6 @@ footer {
 .card {
   max-width: 300px;
 }
-=======
 
   /* News Cards */
   .news-card-h1 {
@@ -2568,5 +2547,4 @@ footer {
   .card {
     max-width: 300px;
   }
->>>>>>> 08b18e26d12f05a333b6e70838e4ce946ab873a8
 }
