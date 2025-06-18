@@ -816,6 +816,7 @@ input {
 
 /* marquee */
 .marquee {
+  margin: 100px 0;
   background-color: var(--text-color);
   overflow: hidden;
   white-space: nowrap;
@@ -1362,17 +1363,11 @@ footer {
   border: none;
   padding: 10px 30px;
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 16px;
 }
-.contact-button button:hover {
-  background-color: var(--text-color);
-  color: black;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.contact-button button:hover{
+    background-color: #ddfa6b;
 }
 
 /* Responsive */
