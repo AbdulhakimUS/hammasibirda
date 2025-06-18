@@ -1788,6 +1788,23 @@ footer {
         margin: 15px 0;
     }
 
+    /* team member  */
+
+    .team-cards{
+        margin: 50px 50px;
+    }
+
+    .team-card{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .team-card img{
+        max-width: 280px;
+        width: 100%;
+        margin: 5px auto;
+    }
+
     /* ask question  */
     .ask-question{
         padding: 50px 100px;
