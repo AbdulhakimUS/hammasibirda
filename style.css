@@ -1368,6 +1368,7 @@ footer {
 }
 .contact-button button:hover{
     background-color: #ddfa6b;
+    color: black;
 }
 
 /* Responsive */
