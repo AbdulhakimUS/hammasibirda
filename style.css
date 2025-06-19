@@ -984,7 +984,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 13px;
+  font-size: 10px;
   color: var(--opacity-white);
 }
 
@@ -994,7 +994,7 @@ input {
 }
 
 .p-group .card-icon i {
-  font-size: 13px;
+  font-size: 10px;
   color: var(--opacity-white);
 }
 
