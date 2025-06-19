@@ -660,9 +660,6 @@ input {
   margin-bottom: 15px;
 }
 
-.star.empty {
-  color: var(--white);
-}
 
 .review-text {
   font-size: 16px;
