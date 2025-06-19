@@ -4,7 +4,7 @@ function toggleMenu() {
 }
 
 // aos 
-AOS.init();
+// AOS.init();
 
 
 // navbar 

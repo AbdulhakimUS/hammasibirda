@@ -468,9 +468,11 @@ input {
   color: var(--white);
   letter-spacing: 1px;
 }
-.mt1{
+
+.mt1 {
   margin-top: 25px;
 }
+
 /* Strategic */
 
 /* Goals */
@@ -542,7 +544,8 @@ input {
   flex-direction: column;
   gap: 15px;
 }
-.bottom-right{
+
+.bottom-right {
   width: 500px;
 }
 
@@ -557,9 +560,11 @@ input {
   font-size: 12px;
   color: var(--opacity-white);
 }
-.right-goal{
+
+.right-goal {
   width: 500px;
 }
+
 .goal-img {
   width: 400px;
   height: 300px;
@@ -659,7 +664,6 @@ input {
   font-size: 15px;
   margin-bottom: 15px;
 }
-
 
 .review-text {
   font-size: 16px;
@@ -1301,9 +1305,11 @@ footer {
   font-size: 30px;
   margin: 30px 10px 0 0;
 }
+
 .contact-icons i:hover {
   color: #ddfa6b;
 }
+
 .contact-left {
   width: 600px;
   padding: 30px;
@@ -1523,6 +1529,10 @@ footer {
     margin-left: 0;
   }
 
+  .left-goal {
+    margin-left: 20%;
+  }
+
   .goal-h1 {
     font-size: 40px;
   }
@@ -1689,7 +1699,7 @@ footer {
 
   .home-img {
     width: 80%;
-    max-width: 500px;
+    max-width: 700px;
   }
 
   /* About Us */
@@ -1752,7 +1762,7 @@ footer {
     width: 100%;
     height: 100%;
     max-width: 280px;
-    max-height: 320px;
+    max-height: 340px;
     padding: 15px 20px;
   }
 
@@ -1776,6 +1786,10 @@ footer {
   .goals-chek-right {
     width: 100%;
     max-width: 500px;
+  }
+
+  .right-goal {
+    margin-left: 30px;
   }
 
   .goal-img {
@@ -1815,17 +1829,16 @@ footer {
   .review-img {
     width: 100%;
     height: 100%;
-    max-width: 370px;
-    max-height: 350px;
-    margin-left: 155px;
+    max-width: 420px;
+    max-height: 370px;
+    margin-left: 35px;
     position: relative;
   }
 
   .testimonial-card {
-    top: 25px;
     left: 45%;
     position: absolute;
-    max-width: 400px;
+    max-width: 450px;
     margin: 20px auto;
   }
 
@@ -1896,7 +1909,7 @@ footer {
     width: 100%;
     height: 100%;
     max-width: 280px;
-    max-height: 340px;
+    max-height: 360px;
   }
 
   .card-body h4 {
@@ -1948,6 +1961,12 @@ footer {
 
   .question-img-text h1 {
     font-size: 18px;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Footer */
@@ -2081,7 +2100,8 @@ footer {
   /* Goals */
   .right-goal {
     width: 297px;
-}
+  }
+
   .container-goals {
     margin: 0 20px;
     flex-direction: row;
@@ -2134,10 +2154,17 @@ footer {
 
   .testimonial-card {
     padding: 20px;
-    max-width: 350px;
+    max-width: 450px;
     top: 10px;
-    left: 40%;
+    left: 30%;
   }
+
+  .arrows {
+    left: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
 
   .review-text {
     gap: 20px;
@@ -2219,7 +2246,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -35px;
+    gap: 150px;
   }
 
   .contact-us {
@@ -2327,7 +2354,8 @@ footer {
   /* Goals */
   .right-goal {
     width: 297px;
-}
+  }
+
   .container-goals {
     flex-direction: column;
     gap: 25px;
@@ -2367,7 +2395,7 @@ footer {
   }
 
   .stats-section {
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   /* Portfolio */
@@ -2400,6 +2428,10 @@ footer {
     width: 100%;
   }
 
+  .question-left {
+    margin-bottom: 150px;
+  }
+
   .contact-us {
     max-width: 450px;
   }
@@ -2411,10 +2443,16 @@ footer {
   .contact-left {
     margin-left: -20px;
   }
+
+  .contact-right {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 15px;
+  }
 }
 
 /* Small Mobile (max-width: 425px) */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {  
   header {
     font-size: 5px !important;
     gap: 5px;
@@ -2422,7 +2460,8 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .header-text{
+
+  .header-text {
     flex-direction: column;
     gap: 0 !important;
     justify-content: center;
@@ -2481,7 +2520,8 @@ footer {
   /* Goals */
   .right-goal {
     width: 297px;
-}
+  }
+
   .container-goals {
     flex-direction: column;
     gap: 25px;
@@ -2517,11 +2557,15 @@ footer {
     max-width: 400px;
     padding: 15px;
     top: 45%;
-    left: 10%;
+    left: 0%;
+  }
+
+  .arrows {
+    left: 25px;
   }
 
   .stats-section {
-    margin-top: 50px;
+    margin-top: 200px;
   }
 
   /* Portfolio */
@@ -2554,17 +2598,26 @@ footer {
     width: 100%;
   }
 
-  .contact-us {
-    max-width: 400px;
+  .question-left {
+    margin-bottom: 250px;
   }
 
-  .contact-right {
-    margin-left: 0px;
-    max-width: 380px;
-    width: 100%;
+  .contact-us {
+    max-width: 450px;
   }
+
 
   .contact-left {
     margin-left: -20px;
+  }
+
+  .contact-right {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .team-h1 {
+    font-size: 30px !important;
   }
 }
