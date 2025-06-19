@@ -542,6 +542,9 @@ input {
   flex-direction: column;
   gap: 15px;
 }
+.bottom-right{
+  width: 580px;
+}
 
 .bottom-right-h2 {
   font-size: 22px;
