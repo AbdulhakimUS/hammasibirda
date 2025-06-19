@@ -543,7 +543,7 @@ input {
   gap: 15px;
 }
 .bottom-right{
-  width: 580px;
+  width: 500px;
 }
 
 .bottom-right-h2 {
@@ -557,7 +557,9 @@ input {
   font-size: 12px;
   color: var(--opacity-white);
 }
-
+.right-goal{
+  width: 500px;
+}
 .goal-img {
   width: 400px;
   height: 300px;
@@ -2080,6 +2082,9 @@ footer {
   }
 
   /* Goals */
+  .right-goal {
+    width: 297px;
+}
   .container-goals {
     margin: 0 20px;
     flex-direction: row;
@@ -2323,6 +2328,9 @@ footer {
   }
 
   /* Goals */
+  .right-goal {
+    width: 297px;
+}
   .container-goals {
     flex-direction: column;
     gap: 25px;
@@ -2474,6 +2482,9 @@ footer {
   }
 
   /* Goals */
+  .right-goal {
+    width: 297px;
+}
   .container-goals {
     flex-direction: column;
     gap: 25px;
