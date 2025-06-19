@@ -468,7 +468,9 @@ input {
   color: var(--white);
   letter-spacing: 1px;
 }
-
+.mt1{
+  margin-top: 25px;
+}
 /* Strategic */
 
 /* Goals */
