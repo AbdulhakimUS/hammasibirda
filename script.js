@@ -60,7 +60,7 @@ setTimeout(() => {
 const counters = document.querySelectorAll('.count');
 let hasAnimated = false;
 
-const duration = 2000; // общая длительность анимации (мс)
+const duration = 1200; // общая длительность анимации (мс)
 
 function animateCounters() {
     counters.forEach(counter => {
@@ -68,12 +68,10 @@ function animateCounters() {
 
         // Задаем шаг в зависимости от числа
         let increment;
-        if (target === 200 || target === 20) {
+        if (target === 5 || target === 15) {
             increment = 1;
-        } else if (target === 900) {
-            increment = 10;
-        } else if (target === 10000) {
-            increment = 100;
+        } else if (target === 70) {
+            increment = 5;
         }
 
         const steps = target / increment;
