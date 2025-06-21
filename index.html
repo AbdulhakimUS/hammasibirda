@@ -605,7 +605,10 @@
                     <input type="text" placeholder="Ismingiz">
                     <input type="email" placeholder="Emailingiz">
                     <input type="text" placeholder="Manzilingiz">
-                    <input type="text" value="+998" class="test">
+                    <input type="tel" id="phone" name="phone"
+                    pattern="\+998[0-9]{9}"
+                    required placeholder="+998 XX XXX XX XX"
+                    maxlength="13"oninput="this.value = this.value.replace(/[^0-9+]/g, '')" class="test">
                 </div>
                 <div class="contact-textarea">
                     <textarea placeholder="Xabar yozish"></textarea>

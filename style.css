@@ -1363,10 +1363,6 @@ footer {
   color: gray;
 }
 
-.test[value="+998"]:focus {
-  color: var(--opacity-white);
-}
-
 .contact-inputs {
   display: flex;
   flex-wrap: wrap;
