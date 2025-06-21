@@ -196,6 +196,23 @@ header i {
 .navbar.scrolled .language-dropdown-content a:hover {
   background-color: var(--grey-color);
 }
+.search-div{
+  position: relative;
+}
+.search-div i{
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  color: #a0aec0;
+}
+.search-input{
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: 1px solid #a0aec0;
+  background-color: var(--grey-color);
+  color: var(--white);
+  font-size: 14px;
+}
 
 /* about us */
 .container-about-us {
