@@ -262,6 +262,7 @@ header i {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  transition: opacity 0.5s ease;
 }
 
 #preloader.hidden {
@@ -2293,8 +2294,17 @@ footer {
 
   header {
     font-size: 5px !important;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    flex-direction: column;
+    gap: 0 !important;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Navbar */
@@ -2308,7 +2318,10 @@ footer {
   }
 
   .search-input {
-    padding: 7px 30px;
+    padding: 5px 12px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 200px;
   }
 
   .search-div i {
@@ -2316,7 +2329,7 @@ footer {
   }
 
   .search-div {
-    margin-left: 20px;
+    margin: 0;
   }
 
   /* Home */
@@ -2359,9 +2372,6 @@ footer {
   }
 
   /* Goals */
-  .right-goal {
-    width: 297px;
-  }
 
   .container-goals {
     flex-direction: column;
@@ -2376,7 +2386,20 @@ footer {
     max-width: 250px;
   }
 
+  .left-goal .top-left {
+    margin-left: -50px;
+  }
+
+  .right-goal {
+    margin-left: -60px;
+    width: 297px;
+  }
+
   /* Review */
+  #review {
+    margin: 0 20px;
+  }
+
   .text-review {
     flex-direction: column;
     align-items: center;
@@ -2384,25 +2407,36 @@ footer {
     gap: 10px;
   }
 
+  .text-review p {
+    margin-left: 10px;
+  }
+
   .review-h1 {
     font-size: 24px;
-    margin-left: 0;
+    margin-left: -90px;
     margin-bottom: 0;
   }
 
   .review-img {
-    max-width: 370px;
+    display: none;
   }
 
   .testimonial-card {
     max-width: 400px;
     padding: 15px;
-    top: 45%;
-    left: 10%;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .arrows {
+    left: 25px;
+    top: -50px;
   }
 
   .stats-section {
-    margin-top: 150px;
+    margin-top: 30px;
+    width: 430px;
+    margin-left: 25px;
   }
 
   /* Portfolio */
@@ -2415,7 +2449,8 @@ footer {
   }
 
   .portfolio-title {
-    font-size: 24px;
+    font-size: 30px;
+    margin: 20px 115px;
   }
 
   /* News Cards */
@@ -2435,26 +2470,54 @@ footer {
     width: 100%;
   }
 
-  .question-left {
-    margin-bottom: 100px;
+  .ask-question {
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  .question-img-text {
+    display: none;
+  }
+
+  .question-right {
+    margin-left: 0px;
+    margin-top: -40px;
   }
 
   .contact-us {
     max-width: 450px;
   }
 
-  .contact-right {
-    margin-left: -15px;
-  }
 
   .contact-left {
-    margin-left: -20px;
+    margin-left: -50px;
   }
 
   .contact-right {
     max-width: 400px;
     width: 100%;
-    margin-left: 15px;
+    margin-left: 0;
+  }
+
+  .team-h1 {
+    font-size: 28px !important;
+  }
+
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-inputs input {
+    width: 100%;
+  }
+
+  .contact-textarea {
+    margin: 0 -10px;
+  }
+
+  .contact-textarea textarea {
+    width: 100%;
   }
 }
 
@@ -2492,7 +2555,10 @@ footer {
   }
 
   .search-input {
-    padding: 7px 20px;
+    padding: 5px 12px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 130px;
   }
 
   .search-div i {
@@ -2553,21 +2619,26 @@ footer {
   }
 
   .goal-h1 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .goal-img {
     max-width: 250px;
   }
-  .left-goal .top-left{
+
+  .left-goal .top-left {
     margin-left: -50px;
   }
 
-  .right-goal{
+  .right-goal {
     margin-left: -20px;
   }
 
   /* Review */
+  #review {
+    margin: 0 20px;
+  }
+
   .text-review {
     flex-direction: column;
     align-items: center;
@@ -2575,29 +2646,36 @@ footer {
     gap: 10px;
   }
 
+  .text-review p {
+    margin-left: 10px;
+  }
+
   .review-h1 {
     font-size: 24px;
-    margin-left: 0;
+    margin-left: -40px;
     margin-bottom: 0;
   }
 
   .review-img {
-    max-width: 370px;
+    display: none;
   }
 
   .testimonial-card {
     max-width: 400px;
     padding: 15px;
-    top: 45%;
-    left: 0%;
+    position: static;
+    margin-top: 30px;
   }
 
   .arrows {
     left: 25px;
+    top: -50px;
   }
 
   .stats-section {
-    margin-top: 200px;
+    margin-top: 50px;
+    width: 380px;
+    margin-left: 25px;
   }
 
   /* Portfolio */
@@ -2630,8 +2708,256 @@ footer {
     width: 100%;
   }
 
-  .question-left {
-    margin-bottom: 250px;
+  .ask-question {
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  .question-img-text {
+    display: none;
+  }
+
+  .question-right {
+    margin-left: 0px;
+    margin-top: -70px;
+  }
+
+  .contact-us {
+    max-width: 450px;
+  }
+
+
+  .contact-left {
+    margin-left: -50px;
+  }
+
+  .contact-right {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .team-h1 {
+    font-size: 30px !important;
+  }
+
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-inputs input {
+    width: 100%;
+  }
+
+  .contact-textarea {
+    margin: 0 -10px;
+  }
+
+  .contact-textarea textarea {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (max-width: 395px) */
+@media screen and (max-width: 395px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  header {
+    font-size: 5px !important;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    flex-direction: column;
+    gap: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Navbar */
+  .logo img {
+    width: 80px;
+    height: 30px;
+  }
+
+  .menu-toggle {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    padding: 5px 12px;
+    width: 100px;
+    font-size: 12px;
+    margin-left: 130px;
+  }
+
+  .search-div i {
+    display: none;
+  }
+
+  .search-div {
+    margin: 0;
+  }
+
+  /* Home */
+  .container-home {
+    padding: 15px;
+    padding-top: 50px;
+    height: 450px;
+  }
+
+  .home-h1 {
+    font-size: 24px;
+  }
+
+  .home-p {
+    font-size: 12px;
+  }
+
+  /* About Us */
+  .between-about h1 {
+    font-size: 1.3rem;
+  }
+
+  .between-about h6 {
+    font-size: 0.8rem;
+  }
+
+  /* Strategic */
+  .container-strategic .card-group {
+    flex-direction: column;
+  }
+
+  .strategic-h1 {
+    font-size: 24px;
+  }
+
+  .card-strategic {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  /* Goals */
+  .right-goal {
+    width: 297px;
+  }
+
+  .container-goals {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .goal-h1 {
+    font-size: 21px;
+  }
+
+  .goal-img {
+    max-width: 250px;
+  }
+
+  .left-goal .top-left {
+    margin-left: -50px;
+  }
+
+  .right-goal {
+    margin-left: -20px;
+  }
+
+  /* Review */
+  #review {
+    margin: 0 20px;
+  }
+
+  .text-review {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .text-review p{
+    margin-left: 10px;
+  }
+
+  .review-h1 {
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .review-img {
+    display: none;
+  }
+
+  .testimonial-card {
+    max-width: 400px;
+    padding: 15px;
+    position: static;
+    margin-top: 30px;
+  }
+
+  .arrows {
+    left: 25px;
+    top: -50px;
+  }
+
+  .stats-section {
+    margin-top: 50px;
+    width: 350px;
+    margin-left: 25px;
+  }
+
+  /* Portfolio */
+  .portfolio-left {
+    flex-direction: column;
+  }
+
+  .portfolio-right {
+    flex-direction: column;
+  }
+
+  .portfolio-title {
+    font-size: 24px;
+  }
+
+  /* News Cards */
+  .news-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .news-card-h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    max-width: 300px;
+    max-height: 360px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ask-question {
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  .question-img-text{
+    display: none;
+  }
+
+  .question-right{
+    margin-left: 0px;
+    margin-top: -70px;
   }
 
   .contact-us {
@@ -2651,5 +2977,20 @@ footer {
 
   .team-h1 {
     font-size: 30px !important;
+  }
+  .contact-inputs{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-inputs input{
+    width: 100%;
+  }
+
+  .contact-textarea{
+    margin: 0 -10px;
+  }
+  .contact-textarea textarea{
+    width: 100%;
   }
 }
