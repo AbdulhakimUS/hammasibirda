@@ -154,3 +154,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section, div[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+    const searchInput = document.querySelector(".search-input");
+    const searchButton = document.querySelector(".search-button");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    sections.forEach(section => {
+      if (section.id) observer.observe(section);
+    });
+  
+    function handleSearch() {
+      const query = searchInput.value.toLowerCase().trim();
+      let found = false;
+  
+      sections.forEach(section => {
+        const id = section.id.toLowerCase();
+        const text = section.textContent.toLowerCase();
+  
+        if (id.includes(query) || text.includes(query)) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+          found = true;
+          return;
+        }
+      });
+  
+      if (!found) {
+        alert("Hech narsa topilmadi");
+      }
+    }
+  
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        handleSearch();
+      }
+    });
+  
+    searchButton.addEventListener("click", () => {
+      handleSearch();
+    });
+  });
+  

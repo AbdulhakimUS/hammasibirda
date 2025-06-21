@@ -162,56 +162,19 @@ header i {
   gap: 20px;
 }
 
-.language-dropdown {
-  position: relative;
-  margin-right: 30px;
-}
 
-.language-dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  right: 0;
-  border-radius: 10px !important;
-}
-
-.language-dropdown:hover .language-dropdown-content {
-  display: block;
-}
-
-.language-dropdown-content a {
-  color: #a0aec0;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  gap: 7px;
-}
-
-.language-dropdown-content a:hover {
-  background-color: #0000002e;
-}
-
-.navbar.scrolled .language-dropdown-content {
-  background-color: var(--navbar-scrolled-bg);
-}
-
-.navbar.scrolled .language-dropdown-content a:hover {
-  background-color: var(--grey-color);
-}
 .search-div{
   position: relative;
   margin: 0 20px 0 0;
 }
 .search-div i{
   position: absolute;
-  top: 18px;
+  top: 18.5px;
   left: 12px;
   color: #a0aec0;
 }
 .search-input{
-  padding: 10px 40px;
+  padding: 7px 40px;
   border-radius: 5px;
   border: 1px solid #a0aec0;
   background-color: var(--grey-color);
