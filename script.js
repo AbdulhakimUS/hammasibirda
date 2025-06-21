@@ -1,3 +1,5 @@
+
+
 function toggleMenu() {
   const navLinks = document.getElementById("navLinks");
   navLinks.classList.toggle("active");
@@ -121,11 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
   targets.forEach((target) => observer.observe(target));
 });
 
-//   togglemenu
-function toggleMenu() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
-}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section, div[id]");
@@ -158,7 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section, div[id]");
     const navLinks = document.querySelectorAll(".nav-links a");
     const searchInput = document.querySelector(".search-input");
-    const searchButton = document.querySelector(".search-button");
   
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -203,9 +200,22 @@ document.addEventListener("DOMContentLoaded", () => {
         handleSearch();
       }
     });
-  
-    searchButton.addEventListener("click", () => {
-      handleSearch();
-    });
   });
+  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // AOS NI ISHLATISH FAQAT >768PX
+    if (window.innerWidth >= 769) {
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    } else {
+      // AOS atributlarini o‘chirish
+      document.querySelectorAll("[data-aos]").forEach(el => {
+        el.removeAttribute("data-aos");
+      });
+    }
+  });
+
   

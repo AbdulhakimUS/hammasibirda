@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: .5s;
   font-family: "Plus Jakarta Sans", sans-serif;
   scrollbar-width: none;
 }
@@ -145,7 +145,7 @@ header i {
   color: var(--text-color);
 }
 
-.nav-links a.active{
+.nav-links a.active {
   color: var(--text-color);
 }
 
@@ -163,17 +163,19 @@ header i {
 }
 
 
-.search-div{
+.search-div {
   position: relative;
   margin: 0 20px 0 0;
 }
-.search-div i{
+
+.search-div i {
   position: absolute;
   top: 15.5px;
   left: 12px;
   color: #a0aec0;
 }
-.search-input{
+
+.search-input {
   padding: 7px 40px;
   border-radius: 5px;
   border: 1px solid #a0aec0;
@@ -1967,6 +1969,12 @@ footer {
 
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   header a {
     font-size: 15px;
   }
@@ -2277,6 +2285,12 @@ footer {
 
 /* Small Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   header {
     font-size: 5px !important;
     gap: 10px;
@@ -2291,6 +2305,18 @@ footer {
 
   .menu-toggle {
     font-size: 1.2rem;
+  }
+
+  .search-input {
+    padding: 7px 30px;
+  }
+
+  .search-div i {
+    display: none;
+  }
+
+  .search-div {
+    margin-left: 20px;
   }
 
   /* Home */
@@ -2410,7 +2436,7 @@ footer {
   }
 
   .question-left {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .contact-us {
@@ -2433,7 +2459,13 @@ footer {
 }
 
 /* Small Mobile (max-width: 425px) */
-@media screen and (max-width: 425px) {  
+@media screen and (max-width: 425px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   header {
     font-size: 5px !important;
     gap: 5px;
@@ -2457,6 +2489,18 @@ footer {
 
   .menu-toggle {
     font-size: 1.2rem;
+  }
+
+  .search-input {
+    padding: 7px 20px;
+  }
+
+  .search-div i {
+    display: none;
+  }
+
+  .search-div {
+    margin: 0;
   }
 
   /* Home */
@@ -2514,6 +2558,13 @@ footer {
 
   .goal-img {
     max-width: 250px;
+  }
+  .left-goal .top-left{
+    margin-left: -50px;
+  }
+
+  .right-goal{
+    margin-left: -20px;
   }
 
   /* Review */
