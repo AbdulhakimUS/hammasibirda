@@ -114,6 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-links a");
   const searchInput = document.querySelector(".search-input");
   const navLinksContainer = document.getElementById("navLinks");
+  const searchDiv = document.querySelector(".search-div");
+  const searchButton = document.querySelector(".search-button");
+
 
   // Observer: подсвечиваем активный пункт
   const observer = new IntersectionObserver(
@@ -175,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  
 
   // Enter в input'е
   searchInput.addEventListener("keydown", (e) => {
