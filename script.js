@@ -1,14 +1,24 @@
-
-
+// ============ TOGGLE MENU ============
 function toggleMenu() {
   const navLinks = document.getElementById("navLinks");
   navLinks.classList.toggle("active");
 }
 
-// aos
-AOS.init();
+// ============ AOS ============
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.innerWidth >= 769) {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  } else {
+    document.querySelectorAll("[data-aos]").forEach((el) => {
+      el.removeAttribute("data-aos");
+    });
+  }
+});
 
-// navbar
+// ============ NAVBAR SCROLL EFFECT ============
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
@@ -18,53 +28,40 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// preloader
+// ============ PRELOADER ============
 const preloader = document.getElementById("preloader");
 const h1 = document.querySelector(".home-h1");
 const p = document.querySelector(".home-p");
 const img = document.querySelector(".home-img");
-
 const start = Date.now();
 
 window.addEventListener("load", () => {
   const elapsed = Date.now() - start;
-  const delay = Math.max(2200 - elapsed, 0); // минимум 2.2 сек
-
+  const delay = Math.max(2200 - elapsed, 0);
   setTimeout(() => {
     preloader.classList.add("hidden");
-
     setTimeout(() => {
       preloader.remove();
-
-      // Анимация главных элементов
       h1.classList.add("animate");
       p.classList.add("animate");
       img.classList.add("animate");
-    }, 500); // Подожди пока opacity скроется (анимация hidden)
+    }, 500);
   }, delay);
 });
 
-
-//   raview
+// ============ COUNTERS ============
 const counters = document.querySelectorAll(".count");
 let hasAnimated = false;
-
-const duration = 1200; // общая длительность анимации (мс)
 
 function animateCounters() {
   counters.forEach((counter) => {
     const target = +counter.getAttribute("data-target");
-
-    // Задаем шаг в зависимости от числа
     let increment;
-    if (target === 5 || target === 15) {
-      increment = 1;
-    } else if (target === 70) {
-      increment = 5;
-    }
+    if (target === 5 || target === 15) increment = 1;
+    else if (target === 70) increment = 5;
 
     const steps = target / increment;
-    const interval = duration / steps;
+    const interval = 1200 / steps;
     let current = 0;
 
     const counterInterval = setInterval(() => {
@@ -92,7 +89,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// line between sections
+// ============ OBSERVER LINE ANIMATIONS ============
 document.addEventListener("DOMContentLoaded", () => {
   const targets = document.querySelectorAll(".observe-target");
 
@@ -101,29 +98,30 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
-          obs.unobserve(entry.target); // отключить после одного срабатывания
+          obs.unobserve(entry.target);
         }
       });
     },
-    {
-      threshold: 0.5, // элемент должен быть виден на 50%
-    }
+    { threshold: 0.5 }
   );
 
   targets.forEach((target) => observer.observe(target));
 });
 
-
-
+// ============ NAVIGATION & SEARCH ============
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section, div[id]");
-    const navLinks = document.querySelectorAll(".nav-links a");
-  
-    const observer = new IntersectionObserver((entries) => {
+  const sections = document.querySelectorAll("section, div[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const searchInput = document.querySelector(".search-input");
+  const navLinksContainer = document.getElementById("navLinks");
+
+  // Observer: подсвечиваем активный пункт
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          navLinks.forEach(link => {
+          navLinks.forEach((link) => {
             link.classList.remove("active");
             if (link.getAttribute("href") === `#${id}`) {
               link.classList.add("active");
@@ -131,82 +129,64 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
       });
-    }, {
-      threshold: 0.5
-    });
-  
-    sections.forEach(section => {
-      if (section.id) {
-        observer.observe(section);
-      }
-    });
-  });
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section, div[id]");
-    const navLinks = document.querySelectorAll(".nav-links a");
-    const searchInput = document.querySelector(".search-input");
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${id}`) {
-              link.classList.add("active");
-            }
-          });
-        }
-      });
-    }, { threshold: 0.5 });
-  
-    sections.forEach(section => {
-      if (section.id) observer.observe(section);
-    });
-  
-    function handleSearch() {
-      const query = searchInput.value.toLowerCase().trim();
-      let found = false;
-  
-      sections.forEach(section => {
-        const id = section.id.toLowerCase();
-        const text = section.textContent.toLowerCase();
-  
-        if (id.includes(query) || text.includes(query)) {
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
-          found = true;
-          return;
-        }
-      });
-  
-      if (!found) {
-        alert("Hech narsa topilmadi");
-        searchInput.value =''
-      }
-    }
-  
-    searchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        handleSearch();
-      }
-    });
-  });
-  
+    },
+    { threshold: 0.5 }
+  );
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // AOS NI ISHLATISH FAQAT >768PX
-    if (window.innerWidth >= 769) {
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    } else {
-      // AOS atributlarini o‘chirish
-      document.querySelectorAll("[data-aos]").forEach(el => {
-        el.removeAttribute("data-aos");
-      });
+  sections.forEach((section) => {
+    if (section.id) observer.observe(section);
+  });
+
+  // Закрытие навбара (если открыт)
+  function closeNavMenuIfOpen() {
+    if (navLinksContainer.classList.contains("active")) {
+      navLinksContainer.classList.remove("active");
+    }
+  }
+
+  // Поиск
+  function handleSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    let found = false;
+
+    closeNavMenuIfOpen(); // Закрыть меню при поиске
+
+    sections.forEach((section) => {
+      const id = section.id.toLowerCase();
+      const text = section.textContent.toLowerCase();
+
+      if (!found && (id.includes(query) || text.includes(query))) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+        found = true;
+      }
+    });
+
+    if (!found) {
+      alert("Hech narsa topilmadi");
+    }
+
+    searchInput.value = "";
+  }
+
+  searchInput.addEventListener("focus", () => {
+    // Закрыть меню, если оно активно
+    if (navLinksContainer.classList.contains("active")) {
+      navLinksContainer.classList.remove("active");
     }
   });
 
-  
+
+  // Enter в input'е
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  });
+
+  // Клик по ссылке — тоже закрыть меню
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeNavMenuIfOpen();
+    });
+  });
+});
