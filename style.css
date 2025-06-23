@@ -325,7 +325,7 @@ input {
 
 /* Home */
 
-#Home {
+#Kirish {
   width: 100%;
   height: 700px;
 }
@@ -464,7 +464,7 @@ input {
 /* Strategic */
 
 /* Goals */
-#Goals {
+#Maqsad {
   width: 100%;
   height: 900px;
   padding: 0;
@@ -731,7 +731,7 @@ input {
   margin-left: 50px;
 }
 
-#review {
+#Izohlar {
   padding: 40px 150px;
   background-color: var(--dark-black);
 }
@@ -1492,7 +1492,7 @@ footer {
   }
 
   /* Goals */
-  #Goals {
+  #Maqsad {
     height: auto;
   }
 
@@ -1526,7 +1526,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     padding: 30px 50px;
   }
 
@@ -1756,7 +1756,7 @@ footer {
   }
 
   /* Goals */
-  #Goals {
+  #Maqsad {
     height: auto;
   }
 
@@ -1791,7 +1791,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     padding: 30px 50px;
   }
 
@@ -2123,7 +2123,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     padding: 20px;
   }
 
@@ -2396,7 +2396,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     margin: 0 20px;
   }
 
@@ -2635,7 +2635,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     margin: 0 20px;
   }
 
@@ -2873,7 +2873,7 @@ footer {
   }
 
   /* Review */
-  #review {
+  #Izohlar {
     margin: 0 20px;
   }
 
