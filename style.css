@@ -7,6 +7,7 @@
   scrollbar-width: none;
 }
 
+
 body {
   background-color: var(--dark-black);
 }
@@ -464,7 +465,7 @@ input {
 /* Strategic */
 
 /* Goals */
-#Maqsad {
+#Yutuqlar {
   width: 100%;
   height: 900px;
   padding: 0;
@@ -1492,7 +1493,7 @@ footer {
   }
 
   /* Goals */
-  #Maqsad {
+  #Yutuqlar {
     height: auto;
   }
 
@@ -1756,7 +1757,7 @@ footer {
   }
 
   /* Goals */
-  #Maqsad {
+  #Yutuqlar {
     height: auto;
   }
 

@@ -114,11 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-links a");
   const searchInput = document.querySelector(".search-input");
   const navLinksContainer = document.getElementById("navLinks");
-  const searchDiv = document.querySelector(".search-div");
-  const searchButton = document.querySelector(".search-button");
 
-
-  // Observer: подсвечиваем активный пункт
+  // ======== Подсветка активного пункта меню ========
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -140,57 +137,45 @@ document.addEventListener("DOMContentLoaded", () => {
     if (section.id) observer.observe(section);
   });
 
-  // Закрытие навбара (если открыт)
+  // ======== Закрыть меню если открыто ========
   function closeNavMenuIfOpen() {
     if (navLinksContainer.classList.contains("active")) {
       navLinksContainer.classList.remove("active");
     }
   }
 
-  // Поиск
+  // ======== Поиск по ID секции ========
   function handleSearch() {
-    const query = searchInput.value.toLowerCase().trim();
-    let found = false;
+    const query = searchInput.value.trim();
+    if (!query) return;
 
-    closeNavMenuIfOpen(); // Закрыть меню при поиске
+    const target = Array.from(sections).find(
+      (section) => section.id.toLowerCase() === query.toLowerCase()
+    );
 
-    sections.forEach((section) => {
-      const id = section.id.toLowerCase();
-      const text = section.textContent.toLowerCase();
+    closeNavMenuIfOpen();
 
-      if (!found && (id.includes(query) || text.includes(query))) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-        found = true;
-      }
-    });
-
-    if (!found) {
+    if (target) {
+      const offset = -80; // сместить вверх на высоту фиксированного хедера (если есть)
+      const y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    } else {
       alert("Hech narsa topilmadi");
     }
 
     searchInput.value = "";
   }
 
-  searchInput.addEventListener("focus", () => {
-    // Закрыть меню, если оно активно
-    if (navLinksContainer.classList.contains("active")) {
-      navLinksContainer.classList.remove("active");
-    }
-  });
-
-  
-
-  // Enter в input'е
+  // ======== События ========
   searchInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       handleSearch();
     }
   });
 
-  // Клик по ссылке — тоже закрыть меню
+  searchInput.addEventListener("focus", closeNavMenuIfOpen);
+
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      closeNavMenuIfOpen();
-    });
+    link.addEventListener("click", closeNavMenuIfOpen);
   });
 });
