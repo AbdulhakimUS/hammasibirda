@@ -188,10 +188,10 @@ header i {
 /* about us */
 .container-about-us {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
   justify-content: space-around;
-  padding: 20px 100px;
+  padding: 20px 200px;
   background-color: black;
   color: white;
   margin: 0 auto;
