@@ -64,7 +64,6 @@ body {
   0% {
     width: 0;
   }
-
   100% {
     width: 80%;
   }
@@ -75,7 +74,6 @@ body {
     left: 50%;
     opacity: 0;
   }
-
   100% {
     left: calc(10% + 20px);
     opacity: 1;
@@ -281,37 +279,25 @@ header i {
 }
 
 @keyframes l40-1 {
-
-  0%,
-  10% {
+  0%, 10% {
     background-position: 0 0, 0 0, 0 0, 0 0;
   }
-
   33% {
-    background-position: 0 0, calc(100% / 3) 0, calc(100% / 3) 0,
-      calc(100% / 3) 0;
+    background-position: 0 0, calc(100% / 3) 0, calc(100% / 3) 0, calc(100% / 3) 0;
   }
-
   66% {
-    background-position: 0 0, calc(100% / 3) 0, calc(2 * 100% / 3) 0,
-      calc(2 * 100% / 3) 0;
+    background-position: 0 0, calc(100% / 3) 0, calc(2 * 100% / 3) 0, calc(2 * 100% / 3) 0;
   }
-
-  90%,
-  100% {
+  90%, 100% {
     background-position: 0 0, calc(100% / 3) 0, calc(2 * 100% / 3) 0, 100% 0;
   }
 }
 
 @keyframes l40-2 {
-
-  0%,
-  49.99% {
+  0%, 49.99% {
     transform: scale(1);
   }
-
-  50%,
-  100% {
+  50%, 100% {
     transform: scale(-1);
   }
 }
@@ -1292,6 +1278,20 @@ footer {
 
 .contact-icons i {
   color: var(--text-color);
+  font-size: 30px;
+  margin: 30px 10px 0 0;
+}
+
+.contact-icons i:hover {
+  color: #ddfa6b;
+}
+
+.contact-left {
+  width: 600px;
+  padding: 30px;
+}
+
+.contact-left img {
   font-size: 30px;
   margin: 30px 10px 0 0;
 }

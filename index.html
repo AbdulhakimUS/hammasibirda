@@ -208,58 +208,54 @@
             <img src="./logos/nova-logo.png" alt="marquee">
             <img src="./logos/samhouse-logo.png" alt="marquee">
             <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
-
-            <img src="./logos/association-logo.png" alt="marquee">
-            <img src="./logos/nova-logo.png" alt="marquee">
-            <img src="./logos/samhouse-logo.png" alt="marquee">
-            <img src="./logos/sps-logo.png" alt="marquee">
         </div>
     </div>
+    <style>
+        .marquee {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .marquee-content {
+            display: flex;
+            gap: 20px;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
     <!-- marquee -->
 
     <!-- About us (asoschilar) -->
     <section id="Haqimizda">
         <div class="container-about-us">
             <div class="between-about">
-                <h1 data-aos="fade-top" data-aos-duration="2000">Biz haqimizda</h1>
-                <p data-aos="fade-top" data-aos-duration="1200">Maqsadimiz — murakkab jarayonlarni soddalashtirish,
+                <h1 data-aos="fade-top" data-aos-duration="2000">CEO</h1>
+                <p data-aos="fade-top" data-aos-duration="1200">
+                    -Raqamli texnologiyalar va biznes jarayonlarini chuqur tushunadigan, har bir mijozning ehtiyojini his
+                    eta oladigan, o‘z ishiga mehr bilan yondashuvchi yetakchi. <br>-Maqsad — murakkab jarayonlarni
+                    soddalashtirish,
                     samaradorlikni oshirish va raqamli transformatsiyani osonlashtirish.
                 </p>
                 <div class="check-about">
-                    <p data-aos="fade-top" data-aos-duration="1000"><i class="fa-solid fa-check"></i>HammasiBirda — bu
-                        biznesingiz uchun zarur bo‘lgan barcha aqlli va zamonaviy raqamli yechimlarni bir joyda taklif
-                        etuvchi jamoa.</p>
-                    <p data-aos="fade-top" data-aos-duration="1000"><i class="fa-solid fa-check"></i>HammasiBirda —
-                        barcha yechimlar bir joyda, sizning biznesingiz uchun.</p>
+                    <p data-aos="fade-top" data-aos-duration="1000"><i class="fa-solid fa-check"></i>Asoschi ishongan
+                        qadriyat — sifat, ishonch va yangilik</p>
+                    <p data-aos="fade-top" data-aos-duration="1000"><i class="fa-solid fa-check"></i>Shu asosda har
+                        bir loyihani mukammallikka intilib amalga oshiramiz va mijozlar uchun haqiqiy qiymat yaratishga
+                        harakat qilamiz</p>
                 </div>
             </div>
             <div class="right-about" data-aos="fade-up" data-aos-duration="2000">
-                <img src="./img/asoschi.png" alt="Asoschi-2" width="280">
+                <img src="./img/asoschi.jpg" alt="Asoschi-2" width="440">
             </div>
         </div>
     </section>
